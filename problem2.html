@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var total = 0
+    var i = 0
+
+    var fibSequence = function() {
+      var firstNum = 0;
+      var secondNum = firstNum++;
+
+      while (firstNum < 4000000) {
+        var sum = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = sum;
+
+        if (sum % 2 === 0) {
+          total += sum;
+        };
+      };
+    };
+
+    fibSequence(i);
+
+  </script>
+  
+</body>
+</html>
